@@ -1,0 +1,69 @@
+.section {
+  margin-bottom: 20px
+} 
+
+.feature {
+  font-size: large;
+  margin-bottom: 30px;
+}
+
+.feature a:link, .feature a:visited, .feature a:active {
+  text-decoration: none;
+  color:#94c01e;
+}
+
+.feature-title {
+  color:#b3937d;
+  border-bottom: #b3937d 1px solid;
+  font-family: Palatino, serif;
+  font-style: italic;
+  font-size:larger;
+}
+
+.feature-title .emphasis {
+  margin-bottom: 10px;
+  margin-top: 1px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-style:normal;
+}
+
+.emphasize {
+  color:#94c01e;
+  font-weight:bold;
+}
+
+.feature li {
+  list-style: none;
+  background-image: url("../images/bullet.png");
+  background-repeat: no-repeat;
+  background-position: 0 -2px;
+  padding-left: 40px;
+  margin-left: -40px;
+  padding-bottom: 7px;
+  padding-top: 3px;
+}
+
+p.slogan {
+  color:#b3937d;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: larger;
+  text-align: justify;
+  margin-top: 0;
+}
+
+.disclosures .feature-title {
+  margin-top: 10px;
+  margin-bottom:10px;
+  cursor: pointer;
+}
+
+.disclosures a, .impressum a {
+    color: #94c01e;
+    text-decoration: none;
+}
+
+.impressum {
+  padding-left: 30px;
+  margin: 15px;
+}
+

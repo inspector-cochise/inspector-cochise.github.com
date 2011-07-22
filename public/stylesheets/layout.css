@@ -1,0 +1,38 @@
+#content-top {
+  background: #FFFFFF;
+  margin: 0 0 30px;
+}
+
+#content-top-first-column {
+  margin: 10px 0 10px 10px;
+  float:left;
+  width:500px;
+}
+
+#content-top-second-column {
+  padding-top: 60px;
+  margin-left:500px;
+  width: 470px;
+  line-height:30px;
+  font-size: large;
+}
+
+#content-top-second-column p {
+  text-align:justify;
+}
+
+#content-first-column {
+  float:left;
+  width:485px;
+  padding-right:15px;
+}
+
+#content-second-column {
+  float:right;
+  width: 485px;
+  padding-left:15px;
+}
+
+#content-no-column {
+  margin: 10px;
+}
