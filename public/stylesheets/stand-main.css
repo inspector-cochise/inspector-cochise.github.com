@@ -1,0 +1,69 @@
+/* Global body style */
+body {
+  color: #594a3e;
+}
+
+h1,h2,h3,h4,h5,h6,h7 {
+  color:#b3937d;
+}
+
+/* Header block */
+#header {
+  background: #594a3e;
+}
+
+/* Menu */
+#menu {
+  font-size: large;
+  color: #b3937d;
+}
+
+#menu a {
+  color: #b3937d;
+}
+
+#menu .active a {
+  color: #FFFFFF;
+}
+
+/* Language Switcher */
+#lang-link {
+  color: #94c01e;
+}
+
+#lang-link a {
+  color: #94c01e;
+}
+
+/* Footer */
+#footer {
+  background: #594a3e;
+  color: #b3937d;
+}
+
+#footer a {
+  color: #b3937d;
+}
+
+/* Submenus and sections */
+.submenu li.active {
+  color: #94c01e;
+}
+
+.section .feature-title {
+  color: #b3937d;
+}
+
+.submenu.static li.active {
+  color: #594a3e;
+}
+
+/* Code */
+pre {
+  background-color: #FFFFFF;
+}
+
+/* Various formatting */
+.emphasize {
+  color: #94c01e;
+}

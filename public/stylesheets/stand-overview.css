@@ -1,0 +1,13 @@
+.green, .emph-feature {
+  color: #94c01e;
+}
+
+.feature a {
+  color: #94c01e;
+}
+
+.disclosures a, .impressum a {
+    color: #94c01e;
+    text-decoration: none;
+}
+

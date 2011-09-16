@@ -9,11 +9,6 @@ var contact = function(){
     var formId = null;
     
     /**
-     * The identifier for the required inputs
-     */
-    var requiredId = null;
-    
-    /**
      * The identifier for the submit button
      */
     var buttonId = null;
@@ -40,7 +35,7 @@ var contact = function(){
      * Initializes the contact form.
      */
     function initialize(){
-        $(requiredId).prev().append(' <span class="mandatory">*</span>');
+        $("[required]").prev().append(' <span class="mandatory">*</span>');
         $(buttonId).button();
         var options = {
             url: 'Contact/mail',
@@ -70,12 +65,29 @@ var contact = function(){
      * @param {Object} options
      */
     function validateContactForm(formData, jqForm, options){
-        var validator = $(formId).validate();
+        var validator = $(formId).validate({
+          rules: {
+            name: "required",
+            email: {
+              required: true,
+              email: true
+            },
+            content: "required"
+          },
+          messages: {
+            name: i18n('view.contact.name.required'),
+            email: {
+              required: i18n('view.contact.email.required'),
+              email: i18n('view.contact.email.email')
+            },
+            content: i18n('view.contact.message.required')
+          }
+        });
         if (validator.form()) {
             return true;
         }
         else {
-            $(messageId).html("A required field is empty or incorrect").addClass("error");
+            $(messageId).html(i18n('view.contact.form.invalid')).addClass("error");
             return false;
         }
     }
@@ -104,7 +116,6 @@ var contact = function(){
         configure: function(theHub, configuration){
             hub = theHub;
             formId = configuration.formId;
-            requiredId = configuration.requiredId;
             buttonId = configuration.buttonId;
             messageId = configuration.messageId;
         },

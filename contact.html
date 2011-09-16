@@ -1,42 +1,92 @@
-<!DOCTYPE html>
-<html lang="de">
-  
-<!-- Mirrored from 127.0.0.1:9000/contact by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 22 Jul 2011 15:56:17 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
-<head>
-    <title>Inspector Cochise</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" media="screen" href="public/stylesheets/main.css">
-    <link rel="stylesheet" media="screen" href="public/stylesheets/layout.css">
-    <link rel="stylesheet" media="screen" href="public/stylesheets/overview.css">
-    <link rel="stylesheet" media="screen" href="public/stylesheets/slideshow.css">
-    <link rel="stylesheet" media="screen" href="public/stylesheets/contact.css">
-    <link rel="stylesheet" media="screen" href="public/stylesheets/licensing.css">
-    <link rel="stylesheet" media="screen" href="public/stylesheets/jquery-ui-1.8.13.custom.css">
-    <link rel="stylesheet" media="screen" href="public/stylesheets/prettify.css">
-        <link rel="shortcut icon" type="image/png" href="public/images/fav.png">
-    <script src="public/javascripts/libs/hubu-0.0.1-SNAPSHOT.js" type="text/javascript" charset="utf-8"></script>
-    <script src="public/javascripts/libs/jquery-1.6.2.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="public/javascripts/libs/jquery-ui-1.8.13.custom.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="public/javascripts/libs/slides.jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="public/javascripts/libs/jquery-form.js" type="text/javascript" charset="utf-8"></script>
-    <script src="public/javascripts/libs/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="public/javascripts/libs/prettify.js" type="text/javascript" charset="utf-8"></script>
-    <script src="public/javascripts/libs/jquery.syntaxhighlighter.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="public/javascripts/libs/jquery.pjax.js" type="text/javascript" charset="utf-8"></script>
-    <script src="public/javascripts/components/highlight.js" type="text/javascript" charset="utf-8"></script>
-    <script src="public/javascripts/components/slideshow.js" type="text/javascript" charset="utf-8"></script>
-    <script src="public/javascripts/components/disclosure.js" type="text/javascript" charset="utf-8"></script>
-    <script src="public/javascripts/components/contact.js" type="text/javascript" charset="utf-8"></script>
-    <script src="public/javascripts/components/pjax.js" type="text/javascript" charset="utf-8"></script>
-        <script type="text/javascript">
+
+<!DOCTYPE html> 
+<html lang="de"> 
+  <head> 
+    <title>Inspector-Cochise</title> 
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/layout.css" media="screen" charset="utf-8" ></link> 
+ 
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/main.css" media="screen" charset="utf-8" ></link> 
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/overview.css" media="screen" charset="utf-8" ></link> 
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/contact.css" media="screen" charset="utf-8" ></link> 
+ 
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/stand-main.css" media="screen" charset="utf-8" ></link> 
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/stand-overview.css" media="screen" charset="utf-8" ></link> 
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/slideshow.css" media="screen" charset="utf-8" ></link> 
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/stand-contact.css" media="screen" charset="utf-8" ></link> 
+    <!--[if !IE 7]>
+		  <style type="text/css">
+		    #wrap {display:table;height:100%}
+		  </style>
+		<![endif]--> 
+        <link rel="shortcut icon" type="image/png" href="./public/images/favicon.png"> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/libs/jquery-1.6.2.min.js"></script> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/libs/jquery-ui-1.8.13.custom.min.js"></script> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/libs/hubu-0.0.1-SNAPSHOT.js"></script> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/libs/jquery-form.min.js"></script> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/libs/jquery.validate.min.js"></script> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/libs/prettify.js"></script> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/libs/jquery.syntaxhighlighter.min.js"></script> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/libs/slides.jquery.js"></script> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/libs/jquery.pjax.min.js"></script> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/components/highlight.js"></script> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/components/slideshow.js"></script> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/components/subcontent.js"></script> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/components/disclosure.js"></script> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/components/contact.js"></script> 
+    <script type="text/javascript" language="javascript"  src="./public/javascripts/components/pjax.js"></script> 
+        <script type="text/javascript"> 
+ 
+var i18nMessages = {"view.impressum.disclaimertitle":"Haftungshinweis","view.contact.email":"E-Mail-Adresse","view.contact.company":"Firma","view.main.overview":"Übersicht","view.impressum.phone":"Fon","view.impressum.disclaimer":"akquinet AG übernimmt keine Gewähr für die Aktualität, Richtigkeit und Vollständigkeit der Informationen auf diesen Seiten oder den jederzeitigen störungsfreien Zugang. Wenn wir auf Internetseiten Dritter verweisen (Links), übernimmt akquinet AG trotz sorgfältiger inhaltlicher Kontrolle keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschliesslich deren Betreiber verantwortlich. Mit dem Betätigen des Verweises verlassen Sie das Informationsangebot der akquinet AG. Weiterhin schliesst akquinet AG ihre Haftung bei Serviceleistungen aus, insbesondere beim Download von der akquinet AG zur Verfügung gestellten Dateien auf den Internetseiten der akquinet AG.","view.impressum.registerauthority":"Registergericht","view.main.details":"Details","view.contact.message":"Nachricht","view.contact.title":"Kontakt","view.impressum.taxnumber":"Umsatzsteuer-Identnummer","view.main.components":"Komponenten","view.impressum.email":"E-Mail-Adresse","view.main.akquinet.href":"http://www.akquinet.de","view.contact.name":"Name","view.main.impressum":"Impressum","view.contact.submit":"Nachricht senden","view.contact.phone":"Telefon","view.main.download":"Download \u0026 Links","view.impressum.akquinet.href":"http://www.akquinet.de","view.main.contact":"Kontakt","view.impressum.title":"Impressum","view.impressum.registernumber":"Registernummer","view.contact.optional":"optional","view.impressum.responsible":"Inhaltlich Verantwortlicher gemäß § 6 MDStV","controllers.contact.result.message":"Nachricht gesendet. Wir melden uns bald.","view.impressum.website":"Webseite","view.main.help":"Hilfe","view.main.licensing":"Lizenz"};
+ 
+/**
+ * Fixme : only parse single char formatters eg. %s
+ */
+var i18n = function(code) {
+    var message = i18nMessages && i18nMessages[code] || code;
+    // Encode %% to handle it later
+    message = message.replace(/%%/g, "\0%\0");
+    if (arguments.length > 1) {
+        // Explicit ordered parameters
+        for (var i=1; i<arguments.length; i++) {
+            var r = new RegExp("%" + i + "\\$\\w", "g");
+            message = message.replace(r, arguments[i]);
+        }
+        // Standard ordered parameters
+        for (var i=1; i<arguments.length; i++) {
+            message = message.replace(/%\w/, arguments[i]);
+        }
+    }
+    // Decode encoded %% to single %
+    message = message.replace("\0%\0", "%");
+    // Imbricated messages
+    var imbricated = message.match(/&\{.*?\}/g);
+    if (imbricated) {
+        for (var i=0; i<imbricated.length; i++) {
+            var imbricated_code = imbricated[i].substring(2, imbricated[i].length-1).replace(/^\s*(.*?)\s*$/, "$1");
+            message = message.replace(imbricated[i], i18nMessages[imbricated_code] || "");
+        }
+    }
+    return message;
+};
+ 
+</script> 
+    <script type="text/javascript"> 
       $(document).ready(function(){
+ 
+          var title = $.trim( $("#container").find('title').remove().text() );
+          if ( title ) document.title = title;
         
           // Component registrations
           hub
               .registerComponent(slideshow(), {
                   slidesId: '.slides',
                   component_name: 'slideshow'
+              })
+              .registerComponent(subcontent(), {
+                  sectionId: '.section',
+                  menuId: '.submenu li',
+                  component_name: 'subcontent'
               })
               .registerComponent(disclosure(), {
                   disclosureId: '.disclosures .feature-title',
@@ -47,7 +97,6 @@
               })
               .registerComponent(contact(), {
                   formId: '#contact',
-                  requiredId: '[required]',
                   buttonId: '#submit_contact',
                   messageId: '#contact_result',
                   component_name: 'contact'
@@ -57,61 +106,49 @@
                   menuButtonId: '.navlink',
                   component_name: 'pjax'
               })
-              .start()
-              .getComponent("pjax")
-              .update();
+ 
+              .start();
       });
-    </script>
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-1518442-9']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
-  </head>
-  <body>
-    <div id="wrapper">
-      <div id="header">
-        <a href="index.html"><div id="logo"></div></a>
-        <div id="menu">
-          <ul>
-            <li><a class="navlink loadInPage" id="overview-link" href="overview.html" data-pjax>Übersicht</a></li>
-            <li><a class="navlink loadInPage" id="download-link" href="download.html" data-pjax>Download & Links</a></li>
-            <li><a class="navlink loadInPage" id="licensing-link" href="licensing.html" data-pjax>Lizenz</a></li>
-            <!--<li><a class="navlink loadInPage" id="help-link" href="/help" data-pjax>Hilfe</a></li>-->
-            <li><div id="active"><a class="navlink loadInPage" id="contact-link" href="contact.html" data-pjax>Kontakt</a></div></li>
-          </ul>
-        </div>
-      </div>
-      <div id="content">
-        <div id="container">
+    </script> 
+  </head> 
+  <body> 
+	  <div id="wrap"> 
+      <div id="header"> 
+        <a href="./overview.html"><div id="logo"></div></a> 
+        <div id="menu"> 
+  <ul> 
+    <li><a class="navlink loadInPage" id="overview-link" href="./overview.html" data-pjax>Übersicht</a></li> 
+    <li><a class="navlink loadInPage" id="download-link" href="./download.html" data-pjax>Download & Links</a></li> 
+    <li><a class="navlink loadInPage" id="licensing-link" href="./licensing.html" data-pjax>Lizenz</a></li> 
+    <!--<li><a class="navlink loadInPage" id="help-link" href="/help" data-pjax>Hilfe</a></li>--> 
+    <li><a class="navlink active loadInPage" id="contact-link" href="./contact.html" data-pjax>Kontakt</a></li> 
+  </ul> 
+</div> 
+      </div> 
+      <div id="wrapper"> 
+        <div id="container"> 
           
-<div id="content-top">
-  <div id="content-top-first-column"> <!--class="slides_frame slides"-->
-    <!--<div class="slides_container">-->
-      <div style="text-align:center;">
-        <img src="public/images/tree_quest.png"/>
-      </div>
-    <!--</div>-->
-  </div>
-  <div id="content-top-second-column">
-      <p class="slogan">Haben Sie noch <span class="emphasize">Anregungen</span> oder <span class="emphasize">Fragen</span>?</p>
+<div id="content-top"> 
+  <div id="content-top-first-column"> <!--class="slides_frame slides"--> 
+    <!--<div class="slides_container">--> 
+      <div style="text-align:center;"> 
+        <img src="public/images/tree_quest.png"/> 
+      </div> 
+    <!--</div>--> 
+  </div> 
+  <div id="content-top-second-column"> 
+      <p class="slogan">Haben Sie noch <span class="emphasize">Anregungen</span> oder <span class="emphasize">Fragen</span>?</p> 
       Wenn ja, dann nehmen Sie einfach Kontakt mit uns auf, entweder über
-      <span class="emphasize">Immanuel<span style="display: none;">Ralf.Meier@example.com</span>.Sims</span> (at) <span class="emphasize">akqu<!-- @bla.com-->inet</span> (Punkt) <span class="emphasize">de</span>
+      <span class="emphasize">Immanuel<span style="display: none;">Ralf.Meier@example.com</span>.Sims</span> (at) <span class="emphasize">akqu<!-- @bla.com-->inet</span> (Punkt) <span class="emphasize">de</span> 
       oder über die folgende Adresse:
-      <p>
-        Akquinet tech@spree GmbH<br/>
-        Bülowstraße 66<br/>
-        10783 Berlin<br/>
-      </p>
-  </div>
-  <div class="clear"></div>
-</div>
+      <p> 
+        Akquinet tech@spree GmbH<br/> 
+        Bülowstraße 66<br/> 
+        10783 Berlin<br/> 
+      </p> 
+  </div> 
+  <div class="clear"></div> 
+</div> 
     
     <!--<form id="contact" name="contact">
       <div id="contact_top">
@@ -120,19 +157,19 @@
           Name:
         </label>
         <input type="text" name="name" id="name" size="40" value="" class="required" required></input>
-
+ 
         <label for="company" id="company_label">
           Firma:
         </label>
         <input type="text" name="company" id="company" size="40" value=""></input>
       </div>
-
+ 
       <div id="right_column">
         <label for="email" id="email_label">
           E-Mail-Adresse:
         </label>
         <input type="email" name="email" id="email" size="40" value="" class="required email" required></input>
-
+ 
         <label for="phone" id="phone_label">
           Telefon:
         </label>
@@ -147,20 +184,17 @@
         <br/>
         <div style="text-align:right;"><input type="submit" id="submit_contact" value="Nachricht senden" /></div>
       </div>
-    </form>-->
-
-        </div>
-      </div>
-      <div id="footer">
-        <ul>
-          <li><a class="loadInPage" id="impressum-link" href="impressum.html" data-pjax>Impressum</a></li>
-          <li><a href="http://www.akquinet.de/" target="_blank">akquinet</a></li>
-          <li class="last"><a href="http://blog.akquinet.de/" target="_blank">Blog</a></li>
-        </ul>
-      </div>
-    </div>
-  </body>
-
-<!-- Mirrored from 127.0.0.1:9000/contact by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 22 Jul 2011 15:56:17 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+    </form>--> 
+ 
+        </div> 
+      </div> 
+    </div> 
+    <div id="footer"> 
+	    <ul> 
+	      <li><a class="loadInPage" id="impressum-link" href="./impressum.html" data-pjax>Impressum</a></li> 
+	      <li><a href="http://www.akquinet.de">akquinet</a></li> 
+	      <li class="last"><a href="http://blog.akquinet.de">Blog</a></li> 
+	    </ul> 
+	  </div> 
+  </body> 
 </html>

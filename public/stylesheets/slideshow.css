@@ -1,21 +1,8 @@
 .slides_container {
-    width: 300px;
-    height: 320px;
-    margin-top: 50px;
-    margin-left: 45px;
+  width: 376px;
 }
-
 
 .slides_frame {
-  background-image: url('../images/white.png');
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 430px;
+  width: 376px;
 }
 
-.in_frame {
-    width: 300px;
-    height: 320px;
-    margin-top: 45px;
-    margin-left: 48px;
-}

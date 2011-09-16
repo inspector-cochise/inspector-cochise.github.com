@@ -33,11 +33,6 @@ var pjax = function(){
         // Update the menu
         $(menuButtonId).parent().removeClass("active");
         $("#" + snippetId + "-link").parent().attr("class", "active");
-        
-        // Animate the content
-        $(containerId).effect("slide", {
-            direction: "right"
-        }, "slow");
       
         // Publish load event for the other JS tasks
         hub.publish(component, "/container/load", {
@@ -78,11 +73,16 @@ var pjax = function(){
          * after configure if the hub is already started.
          */
         start: function(){
+            var popped = ('state' in window.history), 
+                initialURL = location.href;
             component = this;
             
             // Initialize PJAX
             initialize();
-            
+
+            // Set the initial menu item as active and publish 
+            // a load event
+            updatePage();
         },
         
         /**
