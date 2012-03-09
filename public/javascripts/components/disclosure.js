@@ -3,7 +3,7 @@
  */
 var disclosure = function(){
 
-    var closedArrow = '\u25b6', openArrow = '\u25bc';
+    var closedArrow = '\u25b8', openArrow = '\u25be';
     
     /**
      * My own component object
