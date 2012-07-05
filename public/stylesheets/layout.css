@@ -7,14 +7,15 @@ html, body {
   min-height: 100%;
 }
 
-#main {
+#content-main {
   overflow:auto;
-  padding-bottom: 38px; /* footer height */
+  padding-bottom: 43px; /* footer height -- old value 38px */
 }
 
-#footer {position: relative;
-  margin-top: -38px;    /* negative value of footer height */
-  height: 38px;         /* footer height */
+#footer {
+  position: relative;
+  margin-top: -161px;    /* negative value of footer height -- old value -38px */
+  height: 43px;         /* footer height -- old value 38px */
   clear: both;
 } 
 
@@ -69,7 +70,6 @@ body:before {
   padding-top: 60px;
   margin-left:500px;
   width: 470px;
-  line-height:30px;
   font-size: large;
 }
 

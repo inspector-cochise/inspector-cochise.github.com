@@ -5,7 +5,7 @@ body {
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 23px;
 }
 
 /* Header row including logo and menu */
@@ -65,15 +65,15 @@ body {
   position:relative;
 }
 
+#menu .active {
+  color: #fff;
+}
+
 #menu a {
   text-align: center;
 }
 
-#menu .active {
-  color: #FFFFFF;
-}
-
-#menu .active:after {
+#menu .active::after {
   content: " ";
   background-image: url('../images/menu_selected.png');
   background-repeat: no-repeat;
